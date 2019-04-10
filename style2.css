@@ -22,3 +22,17 @@
 }
 .navbar-default .navbar-nav > li> a {background: transparent; color: black;font-size: 18px;}
 .navbar-default .navbar-nav > li > a:hover {background: #f9f; color: white;}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  
+  clear: both;
+  display: table;
+}

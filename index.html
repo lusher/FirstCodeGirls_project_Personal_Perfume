@@ -67,58 +67,37 @@
       <h1>Products</h1>
       <div class="row">
        <div class="column">
-        <img src="./floral.jpg" alt="A local image" width:"100%">"
+        <img src="./floral.jpg" alt="A local image" style="width:100%">
          <div class="desc">Floral</div>
     </div>
 
     <div class="column">
-      <img src="./spicy.jpg" alt="A local image" width:"100%">
+      <img src="./spicy.jpg" alt="A local image" style="width:100%">
        <div class="desc">Spicy</div>
     </div>
-  </div>
 
-      <div class="row">
        <div class="column">
-        <img src="./woody.jpg" alt="A local image" width:"100%">
+        <img src="./woody.jpg" alt="A local image" style="width:100%">
          <div class="desc">Woody</div>
-    </div>
-
-
+     </div>
+</div>
+<div class="row">
      <div class="column">
-       <img src="fruity2.jpg" alt="A local image" width:"100%">
+       <img src="fruity2.jpg" alt="A local image" style="width:100%">
         <div class="desc">Fruity</div>
   </div>
 
     <div class="column">
-    <img src="ocean3.jpg" alt="A local image" width:"100%">
+    <img src="ocean3.jpg" alt="A local image" style="width:100%">
      <div class="desc">Ocean</div>
      </div>
 
    <div class="column">
-       <img src="Oriental2.jpg" alt="A local image" width:"100%">
-        <div class="desc">Ocean</div>
+       <img src="Oriental2.jpg" alt="A local image" style="width:100%">
+        <div class="desc">Oriental</div>
       </div>
+</div>
 
-  <div id="scents" class="row page">
-    <div class="container">
-      <h1>Scents</h1>
-    </div>
-
-  </div>
-
-  <div id="blog" class="row page">
-    <div class="container">
-      <h1>Blog</h1>
-    </div>
-  </div>
-
-  <div id="aboutus" class="row page">
-    <div class="container">
-      <h1>About us</h1>
-    </div>
-  </div>
-    </div>
-  </div>
 
 <!-- The third page starts here
 and I've added an accordion feature, but this is just for testing the look
@@ -127,92 +106,8 @@ use this one and edit looks the cleanest for the FAQ section -->
   <div id="scents" class="row page">
     <div class="container">
       <h1>Scents</h1>
-      <style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-</style>
-</head>
-<body>
-
-<h2>Accordion</h2>
-
-<button class="accordion">Section 1</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
-    </div>
-
-  </div>
-
-  <!-- The fourth page starts here can delete this accordion code -->
-
-  <div id="blog" class="row page">
-    <div class="container">
-      <h1>Blog</h1>
-
-      <dl class="accordion">
-
-      <dt><a href="">Panel 1</a></dt>
-      <dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
-
-      <dt><a href="">Panel 2</a></dt>
-      <dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
-
-      <dt><a href="">Panel 3</a></dt>
-      <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
-
-      </dl>
-
-    </div>
-  </div>
+   </div>
+ </div>
 
 <!--This is the last page and is the about us page, but this can be changed
 if we make this page a seperate page
@@ -221,50 +116,10 @@ can look at the link as it takes us to home? -->
   <div id="aboutus" class="row page">
     <div class="container">
 
-      <style>
-      .vertical-menu {
-        width: 700px;
-        height: 200px;
-        overflow-y: auto;
-      }
 
-      .vertical-menu a {
-        background-color: #eee;
-        color: black;
-        display: block;
-        padding: 12px;
-        text-decoration: none;
-      }
-
-      .vertical-menu a:hover {
-        background-color: #ccc;
-      }
-
-      .vertical-menu a.active {
-        background-color: #4CAF50;
-        color: white;
-      }
-      </style>
-
-
-
-      <h2>Frequently asked questions</h2>
-
-      <div class="vertical-menu">
-        <a href="#v2" class="active">Qustions</a>
-        <a href="#v2">Where is the best place to spay?</a>
-        <a href="#v2">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
-        <a href="#">Link 5</a>
-        <a href="#">Link 6</a>
-        <a href="#">Link 7</a>
-        <a href="#">Link 8</a>
-        <a href="#">Link 9</a>
-        <a href="#">Link 10</a>
-      </div>
       <h1>About us</h1>
     </div>
   </div>
-
+</div>
+</body>
 </html>
