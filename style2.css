@@ -32,7 +32,9 @@
 
 /* Clear floats after image containers */
 .row::after {
-  
+
   clear: both;
   display: table;
+}
+.btn {color: #000; background-color:#FFB6C1;font-family: fantasy; font-size-adjust: auto;
 }
