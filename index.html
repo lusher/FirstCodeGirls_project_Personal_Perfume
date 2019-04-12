@@ -18,7 +18,7 @@
 
 </header>
 <!-- this is the navigation bar, got the code from ..... and then edited -->
-
+<body>
     <div id="home" class="row page">
       <nav class="navbar navbar-default">
         <div class="container">
@@ -26,8 +26,6 @@
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">Personalised Perfume</a>
@@ -40,26 +38,28 @@
               <li><a href="#products">Products</a></li>
               <li><a href="#scents">Scents</a></li>
               <li><a href="#blog">Blog</a></li>
-              <li><a href="#aboutus">About us</a></li>
+              <li><a href="#FAQ">FAQ</a></li>
+
+
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-      <!--placed the h1 into a div and the p nto a div. each is responsive, also did the alignments using
-    pull-right , but the image is not responsive -->
+      <!--placed the h1 into a div and the p into a div. each is responsive, added the button and
+      aligned pull-right , but the image is not responsive, so deleted this image,  -->
       <div class="container">
         <div class="col-sm-12">
-        <h1>Do you want a scent made just for you?
-        </h1>
-        <p> At Personalised perfumes, we match your personality with a scent tailored just for you!</p>
-        <img class="bottle" src="images/flowersmell.png">
+        <h1>Do you want a scent made just for you?</h1>
         </div>
         <div class="col-sm-12">
-        <a class="btn btn-info btn-lg pull-right" href="#scents" role="button">Yes, show me how </a>
+        <a class="btn btn-info btn-lg pull-left" href="#scents" role="button">Yes, show me more </a>
+        </div>
+        <div class="col-sm-12">
+        <p> At Personalised perfumes, we match your personality with a scent tailored just for you!</p>
         </div>
       </div>
-<!-- this ends the first page -->
-  </div>
+    </div>
+    <!-- this ends the first page -->
 
 <!--The second page starts here -->
   <div id="products" class="row page">
@@ -75,69 +75,12 @@ use this one and edit looks the cleanest for the FAQ section -->
   <div id="scents" class="row page">
     <div class="container">
       <h1>Scents</h1>
-      <style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
+      <h2>Floral</h2>
+      <p> our most popular choice of perfume...</p>
+      <h2>Spicy</h2>
+      <h2>Fruity</h2>
 
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-</style>
-</head>
-<body>
-
-<h2>Accordion</h2>
-
-<button class="accordion">Section 1</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
     </div>
-
   </div>
 
   <!-- The fourth page starts here can delete this accordion code -->
@@ -145,74 +88,88 @@ for (i = 0; i < acc.length; i++) {
   <div id="blog" class="row page">
     <div class="container">
       <h1>Blog</h1>
-
-      <dl class="accordion">
-
-      <dt><a href="">Panel 1</a></dt>
-      <dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
-
-      <dt><a href="">Panel 2</a></dt>
-      <dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
-
-      <dt><a href="">Panel 3</a></dt>
-      <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
-
-      </dl>
-
-    </div>
-  </div>
+   </div>
+ </div>
 
 <!--This is the last page and is the about us page, but this can be changed
 if we make this page a seperate page
 here we have another accordion-type code probably wont use this one - but
 can look at the link as it takes us to home? -->
-  <div id="aboutus" class="row page">
+  <div id="FAQ" class="row page">
     <div class="container">
 
       <style>
-      .vertical-menu {
-        width: 700px;
-        height: 200px;
-        overflow-y: auto;
+      .accordion {
+        background-color: inherit;
+        color: #939;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 17px;
+        transition: 0.4s;
       }
 
-      .vertical-menu a {
-        background-color: #eee;
-        color: black;
-        display: block;
-        padding: 12px;
-        text-decoration: none;
+      .active, .accordion:hover {
+        background-color: inherit;
       }
 
-      .vertical-menu a:hover {
-        background-color: #ccc;
-      }
-
-      .vertical-menu a.active {
-        background-color: #4CAF50;
-        color: white;
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: inherit;
+        font-size: 17px;
+        overflow: hidden;
       }
       </style>
 
+  <div class="rectangle"></div>
 
+      <h2>FAQ</h2>
 
-      <h2>Frequently asked questions</h2>
-
-      <div class="vertical-menu">
-        <a href="#v2" class="active">Qustions</a>
-        <a href="#v2">Where is the best place to spay?</a>
-        <a href="#v2">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
-        <a href="#">Link 5</a>
-        <a href="#">Link 6</a>
-        <a href="#">Link 7</a>
-        <a href="#">Link 8</a>
-        <a href="#">Link 9</a>
-        <a href="#">Link 10</a>
+      <button class="accordion">Where is the best place to spray?</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
-      <h1>About us</h1>
-    </div>
-  </div>
 
+      <button class="accordion">Can perfume damage your skin?</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion"> How do you get a lasting scent throughout the day? </button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
+ </div>
+</div>
+
+  <div class="container">
+  <div class="navbar">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  </div>
+</div>
+
+</body>
 </html>
