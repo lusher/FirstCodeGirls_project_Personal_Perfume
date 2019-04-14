@@ -9,94 +9,197 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="style2.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
 </head>
-
 
 <header>
   <!--this header is currently empyty? need to fix or delete -->
-
 </header>
-<!-- this is the navigation bar, got the code from ..... and then edited -->
+
 <body>
+<!-- this is the top nav bar-->
 <div id="home" class="row page">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Personalised Perfume</a>
-          </div>
-
-          <!-- This is the ordered list for the navigation bar -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#products">Products</a></li>
-              <li><a href="#scents">Scents</a></li>
-              <li><a href="#FAQ">FAQ</a></li>
-              <li><a href="AboutUs.html">About Us</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-      <!--placed the h1 into a div and the p into a div. each is responsive, added the button and
-      aligned pull-right , but the image is not responsive, so deleted this image,  -->
-<div class="page1">
-      <div class="container">
-        <div class="col-sm-12">
-          <h1>Do you want a scent made just for you?</h1>
-        </div>
-        <div class="col-sm-12">
-          <a class="btn btn-info btn-lg pull-left" href="#scents" role="button">Yes, show me more </a>
-        </div>
-        <div class="col-sm-12">
-          <p> At Personalised perfumes, we match your personality with a scent tailored just for you!</p>
-        </div>
+  <div class="container">
+  <nav class="navbar navbar-default">  <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+       </button>
+        <a class="navbar-brand" href="#">Personalised Perfume</a>
       </div>
-</div>
-</div>
-    <!-- this ends the first page -->
 
-<!--The second page starts here -->
-  <div id="products" class="row page">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  <!-- This is the ordered list for the navigation bar -->
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    </div>
+
+<div class="page1"> <!-- arrange the page 1 content-->
+  <div class="container">
+    <div class="col-sm-12">
+    <h1>Do you want a scent made just for you?</h1>
+    </div>
+  <div class="col-sm-12">
+    <a class="btn btn-info btn-lg pull-left" href="#scents" role="button">Yes, show me more </a>
+  </div>
+  <div class="col-sm-12">
+    <p> At Personalised perfumes, we match your personality with a scent tailored just for you!</p>
+  </div>
+  </div>
+</div>
+</div> <!-- theader page ends here -->
+
+<!-- Start of products page -->
+<div id="products" class="row page">
     <div class="container">
       <h1>Products</h1>
+
+  <style>
+      * {box-sizing: border-box;}
+
+      body {
+        background-color: #f1f1f1;
+        padding: 20px;
+        font-family: Arial;
+      }
+      /* Center website */
+      .main {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 50px;
+        word-break: break-all;
+      }
+
+      .row {
+        margin: 8px -16px;
+      }
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
+
+      /* Create four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+      }
+
+      /* Clear floats after rows */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Content */
+      .content {
+        background-color: white;
+        padding: 10px;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 900px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+  </style> <!-- MAIN (Center website) -->
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="images/flowersmell.png" alt="Mountains" style="width:100%">
+            <h3>Floral</h3>
+            <p>Our most popular choice of perfume with romantic, light and sweet scents made of a blend of flowers such as lily, jasmine, rose and lavender.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="images/flowersmell.png" alt="Lights" style="width:100%">
+            <h3>Spicy</h3>
+            <p>Spicy notes such as cinnamon, cloves and nutmegfor warmth, sensuality and depth.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="images/flowersmell.png" alt="Nature" style="width:100%">
+            <h3>Fruity</h3>
+            <p>Feel fresh and healthy with pleasing familiar notes of apple, berry,lime and coconat.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="images/flowersmell.png" alt="Mountains" style="width:100%">
+            <h3>Ocean</h3>
+            <p>Feel natural aroma of mountain air, sea spray and blue oceans.</p>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="images/flowersmell.png" alt="Mountains" style="width:100%">
+            <h3>Woody</h3>
+            <p>Woody scents are based on bark and moss notes that conjure winding forest paths.Generate a strong classic apeal, ideal for corporate atmosphere.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="images/flowersmell.png" alt="Lights" style="width:100%">
+            <h3>Oriental</h3>
+            <p>These sensual blends are exotic and distinctly feminine, featuring an earthy, animal-like base scent like musk or ambergris, often combined with warm notes like amber. These fragrances are called "florientals" when combined with florals.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="images/flowersmell.png" alt="Nature" style="width:100%">
+            <h3>My Work</h3>
+            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="images/flowersmell.png" alt="Mountains" style="width:100%">
+            <h3>My Work</h3>
+            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          </div>
+        </div>
+      <!-- END MAIN -->
+
+
     </div>
   </div>
-
-<!-- The third page starts here
-and I've added an accordion feature, but this is just for testing the look
-code was obtained from .....
-use this one and edit looks the cleanest for the FAQ section -->
-  <div id="scents" class="row page">
-    <div class="container">
-      <div class="col-sm-12">
-      <h1>Scents</h1>
-
-      <h3>Floral</h3>
-         <p> Our most popular choice of perfume with romantic, light and sweet scents made of a blend of flowers such as lily, jasmine, rose and lavender.</p>
-      <h3>Spicy</h3>
-         <p>Spicy notes such as cinnamon, cloves and nutmegfor warmth, sensuality and depth.</p>
-      <h3>Fruity</h3>
-         <p> Feel fresh and healthy with pleasing familiar notes of apple, berry,lime and coconat.</p>
-      <h3>Ocean</h3>
-         <p>Feel natural aroma of mountain air, sea spray and blue oceans.</p>
-      <h3>Woody</h3>
-         <p>Woody scents are based on bark and moss notes that conjure winding forest paths.Generate a strong classic apeal, ideal for corporate atmosphere.</p>
-      <h3>Oriental</h3>
-         <p>These sensual blends are exotic and distinctly feminine, featuring an earthy, animal-like base scent like musk or ambergris, often combined with warm notes like amber. These fragrances are called "florientals" when combined with florals.</p>
-  </div>
-</div>
 </div>
 
-<!--This is the last page and is the about us page, but this can be changed
-if we make this page a seperate page
-here we have another accordion-type code probably wont use this one - but
-can look at the link as it takes us to home? -->
+<div class="container">
+      <h2>can say more info about our products here </h2>
+      <p>add information</p><br>
+
+      <p>add information</p><br>
+
+      <p>add information</p>
+</div>
+
+
+
   <div id="FAQ" class="row page">
     <div class="container">
       <style>
@@ -165,8 +268,7 @@ can look at the link as it takes us to home? -->
 </div>
 
 
-
-
+<!-- BOTTOM nav bar -->
   <div class="container">
   <div class="navbar">
   <a href="#" class="active">Home</a>
