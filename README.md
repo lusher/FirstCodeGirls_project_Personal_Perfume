@@ -1,7 +1,4 @@
 # FirstCodeGirls! Build a website Project
-## Personal Perfumes
-Add the READme information here
 
-## Something about FirstCodeGirls!
-
-#### Some links
+Thank you to CodeFirst:Girls for providing this fantastic opportunity to learn to build our own websites.  
+https://www.codefirstgirls.org.uk/
