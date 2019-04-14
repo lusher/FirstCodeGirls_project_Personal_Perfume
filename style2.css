@@ -38,7 +38,7 @@
   background: #efa;
   background-size: cover;
 }
-#FAQ h2{color: #f9f; font-size: 3em; text-align: right;}
+#FAQ h1{color:#black;font-family:monospace;font-size: 3em; text-align:left;}
 
 /*This is the pricing page */
 {
@@ -131,7 +131,7 @@
   background-color: #ddd;
   color: black;
 }
-
+#products h1{font-family: fantasy;color:navy blue;}
 /* Add a color to the active/current link */
 .navbar a.active {
   background-color: #4CAF50;
@@ -139,5 +139,5 @@
 }
 .btn {color: #000; background-color:#FFB6C1;font-family: fantasy; font-size-adjust: auto;
 }
-#Scents h2{color:#ff0000;font-family:monospace;}
-#scents p{color:#0000ff;font-family: helvetica;}
+#Scents h2{color:#f2f2f2;font-family:monospace;}
+#scents p{color:#0000ff;font-family: helvetica;font-size:100%;}
