@@ -30,10 +30,10 @@
 
 
  #FAQ {
-  background: #efa;
+  background: #ebeeff;
   background-size: cover;
 }
-#FAQ h2{color: #f9f; font-size: 3em; text-align: left;}
+#FAQ h2{color: black; font-size: 3em; text-align: left;}
 
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
