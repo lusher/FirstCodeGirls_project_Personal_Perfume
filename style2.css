@@ -1,7 +1,5 @@
-
-
 .page {
-  border: 1px solid #AAA;
+  border: 0px solid #AAA;
   width: 101%;
   height: 640px
 }
@@ -21,8 +19,20 @@
 }
 .navbar-default .navbar-nav > li> a {background: transparent; color: white;font-size: 18px;}
 .navbar-default .navbar-nav > li > a:hover {background: #f9f; color: white;}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
 
-/
+/* Clear floats after image containers */
+.row::after {
+
+  clear: both;
+  display: table;
+}
+
 
  #FAQ {
   background: #efa;
@@ -127,3 +137,7 @@
   background-color: #4CAF50;
   color: white;
 }
+.btn {color: #000; background-color:#FFB6C1;font-family: fantasy; font-size-adjust: auto;
+}
+#Scents h2{color:#ff0000;font-family:monospace;}
+#scents p{color:#0000ff;font-family: helvetica;}
