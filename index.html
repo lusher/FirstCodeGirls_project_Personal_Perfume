@@ -25,7 +25,7 @@
          <span class="sr-only">Toggle navigation</span>
          <span class="icon-bar"></span>
        </button>
-        <a class="navbar-brand" href="#">Personalised Perfume</a>
+        <a class="navbar-brand" href="#"><img src="images/logo.svg" height="20" width="20">Personalised Perfume</a>
       </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  <!-- This is the ordered list for the navigation bar -->
@@ -34,6 +34,7 @@
             <li><a href="#products">Products</a></li>
             <li><a href="#FAQ">FAQ</a></li>
             <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
@@ -45,7 +46,7 @@
     <h1>Do you want a scent made just for you?</h1>
     </div>
   <div class="col-sm-12">
-    <a class="btn btn-info btn-lg pull-left" href="#scents" role="button">Yes, show me more </a>
+    <a class="btn btn-info btn-lg pull-left" href="#products" role="button">Yes, show me more </a>
   </div>
   <div class="col-sm-12">
     <p> At Personalised perfumes, we match your personality with a scent tailored just for you!</p>
@@ -189,11 +190,18 @@
   </div>
 </div>
 
-<div class="container">
-<h2>Star sign scents</h2>
-      <img src="images/horoscope.jpg" style="width:20%">
+<div class="container2">
 
+<h2>About our range</h2>
+      <ul>
+      <p>We use only organic essential oils from reputable suppliers in all our perfumes guaranteed to be:</p>
+      <li>Biodegradable and not harmful to humans and the environment.</li>
+      <li>  No ingredients have been tested on animals.</li>
+      <li>  All products are suitable for vegans and vegetarians.</li>
+      <li>    Our glass bottles are made from recycled glass and are recyclable.</li>
+    </ul>
 </div>
+
 
 
 
@@ -253,6 +261,9 @@
       </div>
 
 
+
+
+
       <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
@@ -274,13 +285,53 @@
 
 
 <!-- BOTTOM nav bar -->
-  <div class="container">
-  <div class="navbar">
-  <a href="#" class="active">Home</a>
-  <a href="AboutUs.html">About us</a>
-  <a href="purchase.html">Buy</a>
-  </div>
-</div>
+<fieldset>
+  <div class="col-sm-12">
+  <h2>Contact Us</h2>
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" required>
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" required>
+  <br>
+  Email address:<br>
+  <input type="email" name="email address" required>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+</fieldset>
+
+
+<div class="contactcontainer">
+  <div class="col-sm-12">
+    <div id=contact class="row page">
+         <h2 class="contact">Social Media</h2>
+         <table width="800" align="center" border="0" cellpadding="1000" cellspacing="10">
+           <tr>
+             <td>
+               <img src="images/twitter.svg" height="30" width="30"> <a href="https://twitter.com">Twitter</a>
+             </td>
+             <td>
+               <br>
+             </td>
+             <td>
+               <img src="images/instagram.svg" height="30" width="30"><a href="https://instagram.com">Instagram</a>
+             </td>
+             <td>
+               <br>
+             </td>
+             <td>
+               <img src="images/gmail.svg" height="30" width="30"><address><a href="mailto:perfumes@gmail.com">
+                 perfumes@gmail.com</a></address>
+             </td>
+
+           </tr>
+         </table>
+         <div>
+         </div>
+       </div>
+
 
 </body>
 </html>
