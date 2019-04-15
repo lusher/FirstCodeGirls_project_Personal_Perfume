@@ -27,15 +27,16 @@
   background: white;
   background-size: cover;
 }
+#products h3{color:navy;text-align: justify;}
 
 
  #FAQ {
-  background: white;
+  background: pink;
   background-size: cover;
 }
 #FAQ h2{color: black; font-size: 3em; text-align: left;}
 
-
+#FAQ button{color: navy;}
 
 
 /* Place the navbar at the bottom of the page, and make it stick */
